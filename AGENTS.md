@@ -107,3 +107,32 @@ Forbidden:
 - Do not implement cheating, botting, boosting, or anti-cheat bypass.
 - Do not implement unauthorized IP/persona replication.
 - Do not let AI-generated modules become canonical without review.
+
+## Neural Fertilizer and Synapse Rules
+
+Cognitive Jelly does not train on raw garbage.
+
+Only verified, redacted, structured, authorized, and reproducible residuals may enter training candidate pools.
+
+Rules:
+1. Raw data stays private.
+2. No consent, no training.
+3. No redaction, no training.
+4. No verification, no foundation-grade fertilizer.
+5. Minor data is high privacy by default.
+6. Enterprise sensitive data is private by default.
+7. Training candidates must keep provenance, consent, privacy, review, verification, risk, and contribution chain.
+8. Distributed nodes must not keep raw data unless explicitly authorized.
+9. Model blocks must be evaluated before being attached.
+10. High-risk synapses must be quarantined.
+
+Forbidden:
+- Do not feed raw private data into model training.
+- Do not create training candidates from F0/F1 data.
+- Do not claim model improvement without evaluation.
+- Do not promise token value, yield, or training rewards.
+- Do not bypass NFAP for convenience.
+- Do not attach unreviewed high-risk model blocks.
+
+Core sentence:
+Only the best humus may grow into new synapses.

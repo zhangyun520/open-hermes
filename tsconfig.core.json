@@ -16,6 +16,8 @@
     "src/ecosystem/**/*.ts",
     "src/polyphony/**/*.ts",
     "src/worlds/**/*.ts",
-    "src/jelly/**/*.ts"
+    "src/jelly/**/*.ts",
+    "src/synapse/**/*.ts",
+    "synapse.ts"
   ]
 }

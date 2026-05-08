@@ -34,3 +34,9 @@ Failure → Residual → Residual Card → Review → Skill Capsule → Cache Hi
 ## Principle
 
 A failure should not be used to shame a person. It should be converted into a safer structure, a clearer residual, a better review path, or a reusable skill.
+
+## Neural Fertilizer Boundary
+
+Failure is engineering material, but not every failure is training material. Raw failures first go through privacy protection, residual digestion, review, verification, and reproducibility checks. NFAP prevents low-quality, unsafe, unauthorized, or private failure traces from becoming model-training candidates.
+
+Only the best humus may grow into new synapses.

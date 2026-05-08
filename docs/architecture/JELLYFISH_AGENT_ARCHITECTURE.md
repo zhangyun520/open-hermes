@@ -135,3 +135,14 @@ This repository implements the minimum architecture layer:
 - Privacy membrane and swarm commons policies.
 - UI page and components.
 - Unit tests for core rules.
+
+## Neural Fertilizer and Nebula Synapse Extension
+
+The jellyfish architecture now includes a protocol bridge from residual digestion to accountable synapse creation:
+
+- `Fertilizer Gate`: checks provenance, consent, privacy, residual clarity, structure, quality, safety, verification, and reproducibility before anything enters a training candidate pool.
+- `Synapse Foundry`: mock-only flow for turning F4/F5 fertilizer into candidate skill, residual, routing, evaluation, LoRA, embedding, memory, safety, or human-transition synapses.
+- `Nebula Synapse Network`: distributed mock node model for personal, CPU, GPU, expert, and commons roles; it is not a real distributed training network.
+- `Modular Model Mesh`: evaluated model blocks can attach only after safety, evaluation, and required human review.
+
+Raw private residuals remain behind the OsmoticPrivacyMembrane and must not be fed into training.

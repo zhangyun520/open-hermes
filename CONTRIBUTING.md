@@ -65,3 +65,14 @@ stable / experimental / safety / aesthetic / low_cost / community / world_model 
 - Add or update tests for logic changes.
 - Update documentation when introducing new concepts.
 - If unsure about safety, route to human review.
+
+## Neural Fertilizer Contributions
+
+When contributing NFAP or Nebula Synapse Network changes, keep the work protocol-first and mock-only unless a later human-reviewed proposal explicitly authorizes real training.
+
+- Do not submit raw private data as training material.
+- Do not promote F0/F1 material into training candidates.
+- Keep provenance, consent, privacy, review, verification, risk, and contribution chain fields intact.
+- Treat minor data as high privacy and enterprise-sensitive material as private by default.
+- Model blocks must pass evaluation and required human review before attachment.
+- Do not promise token value, yield, model-improvement rewards, or training income.

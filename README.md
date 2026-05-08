@@ -645,3 +645,43 @@ Proof of Experience 证明某个用户在某个世界胶囊中真实观察、体
 ## Rust Jelly Core
 
 The repository now includes a pure Rust `jelly_core` crate under `crates/jelly_core`. It captures the stable / low_cost decision core for the residual formula (`C + D = 1`), CnidocyteSafetyGate, NerveNetRouter, ResidualDigestor, OsmoticPrivacyMembrane, DriftOptimizer, and PolypMedusaLifecycle without changing the TypeScript web layer. The crate has no external dependencies and does not store secrets, write public cache, call models, or automate external actions. See [docs/architecture/RUST_JELLY_CORE.md](docs/architecture/RUST_JELLY_CORE.md).
+
+## Neural Fertilizer and Nebula Synapse Network
+
+认知水母不会把所有残差直接喂给模型。只有经过神经肥料准入协议 NFAP 的高质量残差结构，才有资格进入训练候选池。
+
+肥料等级：
+
+- F0 Raw Waste
+- F1 Compostable
+- F2 Structured
+- F3 Verified
+- F4 Training Candidate
+- F5 Foundation-grade
+
+星云突触网络：
+
+- 个人节点
+- CPU 节点
+- GPU 节点
+- 专家节点
+- 公共节点
+
+柔性积木模型：
+
+- Base Core
+- Skill Blocks
+- Residual Blocks
+- Router Blocks
+- Evaluation Blocks
+- Memory Blocks
+- Safety Blocks
+- Domain Blocks
+
+We do not feed people into models.
+We transform verified residual structures into accountable synapses.
+
+我们不是把人喂给模型。
+我们是把被验证的残差结构，转化为可追溯的突触。
+
+See [Neural Fertilizer Admission Protocol](docs/architecture/NEURAL_FERTILIZER_ADMISSION_PROTOCOL.md), [Nebula Synapse Network](docs/architecture/NEBULA_SYNAPSE_NETWORK.md), [Modular Model Mesh](docs/architecture/MODULAR_MODEL_MESH.md), and [Neural Fertilizer Ethics](docs/values/NEURAL_FERTILIZER_ETHICS.md).
