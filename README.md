@@ -1,5 +1,114 @@
 # Cognitive Jelly / 认知水母
 
+**An open-source residual operating system for human-AI cognitive commons.**
+
+认知水母不是一个新的聊天机器人，也不是套壳大模型应用。
+它是一个开源的残差操作系统原型，试图把人类的愿望、失败、灵感、经验、审核、缓存和贡献，沉淀成可复用、可验证、可分配的智能能力。
+
+## What is Cognitive Jelly?
+
+Cognitive Jelly / 认知水母 is a prototype cognitive operating system for human-AI symbiosis. It treats wishes, failures, inspirations, world experiences, reviews, shared caches, and contribution records as structured residuals that can be refined into reusable intelligence.
+
+AGI is not a god descending from the sky. In this project, AGI is imagined as a cognitive city: a public, auditable, privacy-preserving system that continuously compresses world residuals under real human needs.
+
+## Core Formula
+
+```text
+C + D = 1
+```
+
+- `C` = Closure / 闭合度
+- `D` = Residual / 残差
+- `Intelligence` = continuously compressing `D` under real human needs
+
+Core slogans:
+
+- 垃圾不是垃圾，是未分类的残差。
+- 愿望不是愿望，是未来任务的坐标。
+- 灵感不是灵感，是智能体进化的种子。
+- 人不是用户，而是不断演化的残差处理函数。
+- 让每一份残差，发出微光。
+
+## Core Modules
+
+- Wish Pool / 许愿池
+- Reverse Wish Pool / 反向许愿池
+- Garbage Station / 垃圾站
+- Residual Cards / 残差卡
+- Cognitive Jelly Core / 认知水母核心
+- Skill Capsules / 技能胶囊
+- Shared Skill Memory Pool / 共享技能缓存池
+- Review Pool / 审核池
+- Contribution Ledger / 贡献账本
+- Idea Notary / 想法公证处
+- Cognitive Fingerprint / 认知指纹
+- Bias Shelter / 偏见收容所
+- Human Transition Layer / 人类安置层
+- Ecosystem Gateway / 生态连接层
+- World Experience Gateway / 世界体验接口
+- Polyphonic Versioning / 复调版本系统
+- Resonance Workshop / 共鸣工坊
+- Avatar Morphing / 幻化工坊
+- Cognitive Prosthesis / 认知义体
+
+## Values
+
+The short version:
+
+- Compress residuals, not people.
+- Failure is engineering material.
+- Raw data stays private.
+- Structure can be shared.
+- Human needs come first.
+- Verification over vibes.
+- Open protocols, private memories.
+- No founder worship.
+- No cognitive exploitation.
+- No gambling mechanics.
+- Authorized personas only.
+- Shared intelligence must be accountable.
+- Many voices, not one latest version.
+- World models must stay humble.
+- Let every residual emit a faint light.
+
+Read the full values in [VALUES.md](VALUES.md), the project charter in [CHARTER.md](CHARTER.md), governance in [GOVERNANCE.md](GOVERNANCE.md), contribution rules in [CONTRIBUTING.md](CONTRIBUTING.md), and safety reporting in [SECURITY.md](SECURITY.md).
+
+## What We Do Not Do
+
+Cognitive Jelly explicitly does **not** support:
+
+- 可交易 token。
+- 收益、分红、价格或升值承诺。
+- 共享账号。
+- 薅网页会员额度。
+- 保存真实 API key。
+- 把隐私数据进入公共缓存。
+- 外挂、代练、刷分、绕过反作弊。
+- 未授权 IP 复刻或真人冒用。
+- AI 自动执行高风险外部动作。
+- AI 自动生成版本绕过人工审核成为 canonical。
+- 用自动化制造更大的 `D_human`。
+- 把认知指纹当社会信用分。
+- 把贡献账本当功德审判。
+
+## Roadmap
+
+The prototype roadmap is organized around residual capture, privacy-preserving shared skill memory, polyphonic versioning, world-experience feedback, human transition review, and cognitive commons governance. See the detailed roadmap sections below for implementation-specific plans.
+
+## Contributing
+
+Contributors can help with code, protocols, documentation, residual taxonomies, skill capsules, safety review, bias reports, human transition proposals, UI/aesthetic work, and world experience connectors. Every contribution should explain which `D` it reduces, privacy impact, public cache impact, human transition impact, risk level, voice track, and tests. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This repository is currently a prototype. If you redistribute, deploy, or build on it, preserve the privacy-first, anti-exploitation, anti-gambling, anti-abuse, and human-transition boundaries described in this repository. A formal license should be selected before production use.
+
+## Safety and Privacy
+
+Raw data stays private. Shared intelligence must be anonymized, authorized, structured, verified, and accountable. High-risk external actions require human approval; game/world connectors must not bypass anti-cheat; persona/IP connectors require authorization; AI-generated versions cannot become canonical without human review. See [SECURITY.md](SECURITY.md) and [docs/values/ANTI_ABUSE_BOUNDARIES.md](docs/values/ANTI_ABUSE_BOUNDARIES.md).
+
+---
+
 Cognitive Jelly 是从 “Residual Stable / 残差马厩” MVP 概念重构而来的 Web App 原型：一个把愿望、失败、灵感、经验、审核和缓存，持续转化为可复用智能能力的认知操作系统。
 
 > 让每一份残差，发出微光。

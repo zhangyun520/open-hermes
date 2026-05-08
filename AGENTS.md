@@ -1,57 +1,82 @@
 # AGENTS.md
 
-## 项目核心原则
+## Project Identity
 
-Cognitive Jelly 是一个认知城市操作系统原型。
-本项目不采用单线性版本观，而采用复调式并行版本观。
+Cognitive Jelly is an open-source residual operating system prototype for human-AI cognitive commons.
 
-任何重要功能修改，都应考虑：
+Core formula:
 
-1. Stable 线：
-最小可用、低风险、测试通过。
+```text
+C + D = 1
+```
 
-2. Experimental 线：
-大胆探索，但默认不进入公共层。
+C = closure.
+D = residual.
 
-3. Safety 线：
-隐私、权限、人类安置、外部动作风险。
+The project goal is to reduce real residuals under human needs, safety constraints, and cost constraints.
 
-4. Aesthetic 线：
-水母 UI、认知大陆、幻化、DIY、体验表达。
+## Core Values
 
-5. Low-cost 线：
-缓存命中、低模型成本、规则替代模型。
+- Compress residuals, not people.
+- Failure is engineering material.
+- Raw data stays private.
+- Structure can be shared.
+- Verification over vibes.
+- No founder worship.
+- No cognitive exploitation.
+- No gambling mechanics.
+- Authorized personas only.
+- Shared intelligence must be accountable.
+- Many voices, not one latest version.
+- World models must stay humble.
+- Let every residual emit a faint light.
 
-6. Community 线：
-贡献、公证、共享缓存和治理。
+## Development Rules
 
-7. World-model 线：
-不确定性、验证、反馈和风险边界。
+Before changing code, identify:
 
-8. Human-transition 线：
-自动化影响人类岗位、身份、收入、尊严时必须审查。
+1. Which `D` this change attempts to reduce.
+2. Whether it affects privacy.
+3. Whether it affects public cache.
+4. Whether it affects human transition.
+5. Whether it affects external integrations.
+6. Which voice track it belongs to:
+   stable / experimental / safety / aesthetic / low_cost / community / world_model / human_transition.
 
-## Codex 输出要求
+## Forbidden
 
-每次完成任务后必须说明：
+- Do not implement tradable tokens.
+- Do not promise yield, profit, or token appreciation.
+- Do not store real API keys.
+- Do not expose secrets to the frontend.
+- Do not put private data into public cache.
+- Do not automate high-risk external actions.
+- Do not bypass game anti-cheat.
+- Do not implement cheating, botting, or boosting.
+- Do not support unauthorized IP/persona replication.
+- Do not allow AI-generated versions to become canonical without human review.
+- Do not let cosmetic or paid items affect contribution weight.
+- Do not turn cognitive fingerprints into social credit scores.
+- Do not turn contribution ledgers into moral judgment systems.
 
-- 本次修改属于哪个声部
-- 是否影响 safety
-- 是否影响 public cache
-- 是否影响人类安置
-- 是否影响外部连接
-- 是否需要人工审核
-- 是否可生成 VersionNode
-- 如何测试
+## Required
 
-## 禁止事项
+- Add or update tests for logic changes.
+- Update documentation for new concepts.
+- Mark mock functionality clearly.
+- Preserve privacy-first defaults.
+- Prefer protocol clarity over clever implementation.
+- If unsure about safety, route to human review.
 
-- 不要实现可交易 token
-- 不要保存真实 API key
-- 不要把隐私数据进入 public cache
-- 不要自动执行高风险外部动作
-- 不要让 AI 生成版本绕过人工审核直接成为 canonical
-- 不要让外观、幻化、付费装饰影响贡献权重
-- 不要复刻未经授权版权角色或真人形象
-- 不要把世界体验接口做成外挂、代练、刷分或反作弊绕过工具
-- 不要把虚拟世界反馈直接当作真实世界结论
+## Completion Notes Required From Agents
+
+When completing work, summarize:
+
+- Voice track.
+- Safety impact.
+- Public cache impact.
+- Human transition impact.
+- External integration impact.
+- Whether human review is needed.
+- Whether the work can become a VersionNode.
+- Tests or checks run.
