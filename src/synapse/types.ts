@@ -194,3 +194,11 @@ export interface ModelBlock {
   status: 'draft' | 'candidate' | 'sandbox' | 'accepted' | 'rejected' | 'quarantined' | 'deprecated';
   requiresHumanReview: boolean;
 }
+
+export interface PruningDecision {
+  targetId: string;
+  targetType: 'fertilizer' | 'synapse' | 'model_block' | 'training_candidate';
+  action: 'keep' | 'merge' | 'downgrade' | 'dormant' | 'compost' | 'quarantine' | 'forget';
+  reasons: string[];
+  requiresHumanReview: boolean;
+}

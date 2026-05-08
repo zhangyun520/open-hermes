@@ -40,3 +40,5 @@ A failure should not be used to shame a person. It should be converted into a sa
 Failure is engineering material, but not every failure is training material. Raw failures first go through privacy protection, residual digestion, review, verification, and reproducibility checks. NFAP prevents low-quality, unsafe, unauthorized, or private failure traces from becoming model-training candidates.
 
 Only the best humus may grow into new synapses.
+
+Micro-glow pruning keeps failure engineering from becoming a garbage mountain: repeated low-use traces can merge, old low-verification traces can compost, historically meaningful traces can sleep dormant, and risky traces must be quarantined or forgotten when consent requires it.

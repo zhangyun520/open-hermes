@@ -8,4 +8,5 @@ export * from './modularModelMesh';
 export * from './distributedNode';
 export * from './synapseEvaluation';
 export * from './synapseSafetyGate';
+export * from './synapticPruning';
 export * from './mockSynapseData';

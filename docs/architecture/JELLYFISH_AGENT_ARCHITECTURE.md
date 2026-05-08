@@ -146,3 +146,4 @@ The jellyfish architecture now includes a protocol bridge from residual digestio
 - `Modular Model Mesh`: evaluated model blocks can attach only after safety, evaluation, and required human review.
 
 Raw private residuals remain behind the OsmoticPrivacyMembrane and must not be fed into training.
+- `Residual Synaptic Pruning`: keeps the synapse network from becoming a garbage mountain by keeping, merging, downgrading, dormancy-routing, composting, quarantining, or forgetting candidates based on usage, verification, risk, duplication, age, historical value, and consent withdrawal.

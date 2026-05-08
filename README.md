@@ -678,10 +678,20 @@ The repository now includes a pure Rust `jelly_core` crate under `crates/jelly_c
 - Safety Blocks
 - Domain Blocks
 
+微光剪枝：
+
+- Keep
+- Merge
+- Downgrade
+- Dormant
+- Compost
+- Quarantine
+- Forget
+
 We do not feed people into models.
 We transform verified residual structures into accountable synapses.
 
 我们不是把人喂给模型。
 我们是把被验证的残差结构，转化为可追溯的突触。
 
-See [Neural Fertilizer Admission Protocol](docs/architecture/NEURAL_FERTILIZER_ADMISSION_PROTOCOL.md), [Nebula Synapse Network](docs/architecture/NEBULA_SYNAPSE_NETWORK.md), [Modular Model Mesh](docs/architecture/MODULAR_MODEL_MESH.md), and [Neural Fertilizer Ethics](docs/values/NEURAL_FERTILIZER_ETHICS.md).
+See [Cognitive Jelly v0.4 Star-Synapse Plan](docs/whitepapers/COGNITIVE_JELLY_V0_4_STAR_SYNAPSE_PLAN.md), [Neural Fertilizer Admission Protocol](docs/architecture/NEURAL_FERTILIZER_ADMISSION_PROTOCOL.md), [Nebula Synapse Network](docs/architecture/NEBULA_SYNAPSE_NETWORK.md), [Modular Model Mesh](docs/architecture/MODULAR_MODEL_MESH.md), [Star-Synapse Plan](docs/architecture/STAR_SYNAPSE_PLAN.md), [Residual Synaptic Pruning](docs/architecture/RESIDUAL_SYNAPTIC_PRUNING.md), and [Neural Fertilizer Ethics](docs/values/NEURAL_FERTILIZER_ETHICS.md).

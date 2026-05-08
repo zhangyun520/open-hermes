@@ -125,6 +125,8 @@ Rules:
 8. Distributed nodes must not keep raw data unless explicitly authorized.
 9. Model blocks must be evaluated before being attached.
 10. High-risk synapses must be quarantined.
+11. Synapses must be pruned, merged, composted, quarantined, or forgotten when needed.
+12. The system must not grow a garbage mountain.
 
 Forbidden:
 - Do not feed raw private data into model training.
@@ -133,6 +135,8 @@ Forbidden:
 - Do not promise token value, yield, or training rewards.
 - Do not bypass NFAP for convenience.
 - Do not attach unreviewed high-risk model blocks.
+- Do not ignore consent withdrawal.
+- Do not treat pruning as deletion-only; preserve dormant/compost/archive paths.
 
 Core sentence:
 Only the best humus may grow into new synapses.

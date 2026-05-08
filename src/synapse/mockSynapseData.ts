@@ -1,7 +1,8 @@
 import { createModelBlock } from './modularModelMesh';
 import { createSynapseCapsule } from './synapseCapsule';
-import type { ModelBlock, NeuralFertilizer, SynapseCapsule } from './types';
+import type { ModelBlock, NeuralFertilizer, PruningDecision, SynapseCapsule } from './types';
 import { listMockTrainingNodes } from './distributedNode';
+import { decideSynapticPruning } from './synapticPruning';
 
 const baseFertilizer = (overrides: Partial<NeuralFertilizer>): NeuralFertilizer => ({
   id: 'fertilizer-base',
@@ -108,3 +109,12 @@ export const mockModelBlocks: ModelBlock[] = [
 ];
 
 export const mockDistributedTrainingNodes = listMockTrainingNodes();
+
+export const mockPruningDecisions: PruningDecision[] = [
+  decideSynapticPruning({ targetId: 'synapse-high-value', targetType: 'synapse', usageCount: 88, verificationScore: 92, riskLevel: 'low', duplicateScore: 12, ageDays: 40, hasHistoricalValue: false, hasConsentWithdrawn: false }),
+  decideSynapticPruning({ targetId: 'candidate-duplicate-low-use', targetType: 'training_candidate', usageCount: 1, verificationScore: 68, riskLevel: 'low', duplicateScore: 94, ageDays: 20, hasHistoricalValue: false, hasConsentWithdrawn: false }),
+  decideSynapticPruning({ targetId: 'old-world-model-note', targetType: 'model_block', usageCount: 2, verificationScore: 50, riskLevel: 'low', duplicateScore: 20, ageDays: 320, hasHistoricalValue: true, hasConsentWithdrawn: false }),
+  decideSynapticPruning({ targetId: 'old-low-verification-fertilizer', targetType: 'fertilizer', usageCount: 0, verificationScore: 20, riskLevel: 'medium', duplicateScore: 30, ageDays: 260, hasHistoricalValue: false, hasConsentWithdrawn: false }),
+  decideSynapticPruning({ targetId: 'poisoned-synapse-candidate', targetType: 'synapse', usageCount: 4, verificationScore: 70, riskLevel: 'critical', duplicateScore: 10, ageDays: 8, hasHistoricalValue: false, hasConsentWithdrawn: false }),
+  decideSynapticPruning({ targetId: 'withdrawn-fertilizer', targetType: 'fertilizer', usageCount: 18, verificationScore: 82, riskLevel: 'low', duplicateScore: 8, ageDays: 15, hasHistoricalValue: false, hasConsentWithdrawn: true })
+];

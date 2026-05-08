@@ -76,3 +76,4 @@ When contributing NFAP or Nebula Synapse Network changes, keep the work protocol
 - Treat minor data as high privacy and enterprise-sensitive material as private by default.
 - Model blocks must pass evaluation and required human review before attachment.
 - Do not promise token value, yield, model-improvement rewards, or training income.
+- Respect consent withdrawal and use pruning actions (dormant, compost, quarantine, forget) instead of treating pruning as deletion-only.
