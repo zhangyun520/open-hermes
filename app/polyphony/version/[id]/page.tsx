@@ -4,4 +4,40 @@ import { VersionLineageGraph } from '@/components/polyphony/VersionLineageGraph'
 import { VersionRiskBadge } from '@/components/polyphony/VersionRiskBadge';
 import { VersionStatusBadge } from '@/components/polyphony/VersionStatusBadge';
 import { calculateVersionFitness, generateVersionLineage, getVoiceTrack, listVersionReviews, shouldRequireHumanReview } from '@/src/polyphony';
-export default function VersionPage({ params }: { params: { id: string } }) { let lineage; try { lineage = generateVersionLineage(params.id); } catch { notFound(); } const node = lineage.version; const track = getVoiceTrack(node.voiceTrackId); return <div><PageTitle eyebrow="Version Node" title={node.title}>{node.summary}</PageTitle><div className="mb-4 flex flex-wrap gap-2"><VersionStatusBadge status={node.status} /><VersionRiskBadge risk={node.riskLevel} />{shouldRequireHumanReview(node) ? <span className="rounded-full border border-coral/30 bg-coral/10 px-3 py-1 text-sm text-coral">需要人工审核</span> : null}</div><section className="grid gap-4 md:grid-cols-4"><Metric label="Fitness" value={calculateVersionFitness(node.id)} /><Metric label="Safety" value={node.safetyScore ?? '—'} /><Metric label="Compression" value={node.compressionScore ?? '—'} /><Metric label="Voice" value={track?.type ?? '—'} /></section><Card className="mt-4"><p>内容 Hash：{node.contentHash}</p><p className="mt-2">贡献者：{node.authorIds.join(' / ')}</p><p className="mt-2">父节点：{node.parentVersionIds.join(' / ') || '无'}</p><p className="mt-2">子节点：{node.childVersionIds.join(' / ') || '无'}</p><p className="mt-2">审核记录：{listVersionReviews(node.id).length}</p>{node.uncertaintyMetadata ? <p className="mt-2 text-tide">不确定性：置信度 {Math.round(node.uncertaintyMetadata.confidence * 100)}%，失效条件 {node.uncertaintyMetadata.failureConditions.join('；')}</p> : null}</Card><div className="mt-6"><VersionLineageGraph lineage={lineage} /></div></div>; }
+
+export default async function VersionPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  let lineage;
+  try {
+    lineage = generateVersionLineage(id);
+  } catch {
+    notFound();
+  }
+  const node = lineage.version;
+  const track = getVoiceTrack(node.voiceTrackId);
+  return (
+    <div>
+      <PageTitle eyebrow="Version Node" title={node.title}>{node.summary}</PageTitle>
+      <div className="mb-4 flex flex-wrap gap-2">
+        <VersionStatusBadge status={node.status} />
+        <VersionRiskBadge risk={node.riskLevel} />
+        {shouldRequireHumanReview(node) ? <span className="rounded-full border border-coral/30 bg-coral/10 px-3 py-1 text-sm text-coral">需要人工审核</span> : null}
+      </div>
+      <section className="grid gap-4 md:grid-cols-4">
+        <Metric label="Fitness" value={calculateVersionFitness(node.id)} />
+        <Metric label="Safety" value={node.safetyScore ?? '—'} />
+        <Metric label="Compression" value={node.compressionScore ?? '—'} />
+        <Metric label="Voice" value={track?.type ?? '—'} />
+      </section>
+      <Card className="mt-4">
+        <p>内容 Hash：{node.contentHash}</p>
+        <p className="mt-2">贡献者：{node.authorIds.join(' / ')}</p>
+        <p className="mt-2">父节点：{node.parentVersionIds.join(' / ') || '无'}</p>
+        <p className="mt-2">子节点：{node.childVersionIds.join(' / ') || '无'}</p>
+        <p className="mt-2">审核记录：{listVersionReviews(node.id).length}</p>
+        {node.uncertaintyMetadata ? <p className="mt-2 text-tide">不确定性：置信度 {Math.round(node.uncertaintyMetadata.confidence * 100)}%，失效条件 {node.uncertaintyMetadata.failureConditions.join('；')}</p> : null}
+      </Card>
+      <div className="mt-6"><VersionLineageGraph lineage={lineage} /></div>
+    </div>
+  );
+}
