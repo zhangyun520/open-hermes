@@ -1,0 +1,4 @@
+import { Card, Metric, PageTitle } from '@/components/UI';
+import { calculatePendingReward, calculateReviewScore } from '@/lib/cognitive';
+import { contributions, reviews } from '@/lib/mock';
+export default function ContributionLedger() { const score = calculateReviewScore(reviews[0]); return <div><PageTitle eyebrow="Contribution Ledger" title="贡献账本">展示谁提出愿望、谁投喂、谁审核、谁测试、谁让技能升级，以及饲料值、声望、压缩凭证、分润权（mock）。</PageTitle><section className="grid gap-4">{contributions.map(c => { const reward = calculatePendingReward(c, score); return <Card key={c.id}><div className="grid gap-3 md:grid-cols-5"><div><p className="text-tide">{c.action}</p><h3 className="text-xl font-semibold">{c.actor}</h3><p className="text-white/55">{c.createdAt}</p></div><Metric label="饲料值" value={reward.feedValue} /><Metric label="声望" value={reward.reputation} /><Metric label="压缩凭证" value={reward.compressionCredential} /><Metric label="分润权" value={reward.revenueRight} /></div></Card>; })}</section></div>; }

@@ -1,0 +1,3 @@
+import { Card, PageTitle } from '@/components/UI';
+import { biasAlerts } from '@/lib/mock';
+export default function BiasShelter() { return <div><PageTitle eyebrow="Bias Shelter" title="偏见收容所">系统免疫器官，不处理单个任务，只检测系统病。</PageTitle><section className="grid gap-4 md:grid-cols-2">{biasAlerts.map(a => <Card key={a.id}><p className="text-coral">{a.type} · {a.severity}</p><h3 className="text-2xl font-semibold">{a.title}</h3><ul className="mt-4 list-disc pl-5 text-white/65">{a.evidence.map(e => <li key={e}>{e}</li>)}</ul><p className="mt-4 text-plankton">建议：{a.recommendation}</p></Card>)}</section></div>; }

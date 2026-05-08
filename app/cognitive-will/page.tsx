@@ -1,0 +1,3 @@
+import { Card, PageTitle } from '@/components/UI';
+import { cognitiveWill } from '@/lib/mock';
+export default function CognitiveWillPage() { return <div><PageTitle eyebrow="Cognitive Will" title="认知遗嘱">一个人的想法、技能和贡献在离开系统后，如何闭环。</PageTitle><Card><div className="grid gap-4 md:grid-cols-4">{(['inherit','donate','seal','destroy'] as const).map(k => <div key={k} className="rounded-3xl border border-white/10 bg-white/5 p-5"><p className="text-tide">{k === 'inherit' ? '继承' : k === 'donate' ? '捐赠' : k === 'seal' ? '封存' : '销毁'}</p><ul className="mt-3 space-y-2 text-white/70">{cognitiveWill[k].map(x => <li key={x}>{x}</li>)}</ul></div>)}</div><p className="mt-6 text-plankton">{cognitiveWill.note}</p></Card></div>; }
