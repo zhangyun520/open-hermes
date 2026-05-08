@@ -1,0 +1,2 @@
+import { makeMockWorldConnector } from './mockConnectorFactory';
+export const mockGameConnector = makeMockWorldConnector('world-single-player', '单机游戏连接器', 'single_player_game', { permissions: ['read_only', 'training_mode', 'sandbox_write'], capabilities: { readState: true, importReplay: false, exportScene: true, receiveEvents: true, sendSuggestions: true, sandboxActions: true, multiplayerLiveControl: false } });

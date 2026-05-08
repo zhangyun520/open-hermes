@@ -1,0 +1,2 @@
+import type { TesterReputation } from '../types';
+export function listTesterAchievements(reputation: TesterReputation): string[] { const achievements = []; if (reputation.acceptedFeedbackCount >= 1) achievements.push('初次体验证明'); if (reputation.trustLevel === 'trusted' || reputation.trustLevel === 'expert') achievements.push('可信体验者'); if (reputation.trustLevel === 'expert') achievements.push('世界残差猎人'); return achievements; }

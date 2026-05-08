@@ -1,0 +1,2 @@
+import { makeMockWorldConnector } from './mockConnectorFactory';
+export const mockSimulationConnector = makeMockWorldConnector('world-simulation', '模拟器连接器', 'simulation', { permissions: ['read_only', 'training_mode', 'sandbox_write'], capabilities: { readState: true, importReplay: true, exportScene: true, receiveEvents: true, sendSuggestions: true, sandboxActions: true, multiplayerLiveControl: false } });

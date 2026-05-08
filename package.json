@@ -1,0 +1,28 @@
+{
+  "name": "cognitive-jelly",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "lint": "next lint",
+    "typecheck:core": "tsc --noEmit --pretty false --strict --lib es2022,dom --module esnext --moduleResolution bundler --ignoreConfig lib/types.ts lib/cognitive.ts lib/jellyPet.ts lib/gamification.ts lib/workshop.ts lib/morphing.ts lib/productSystemsMock.ts lib/mock.ts lib/modules.ts src/integrations/types.ts src/integrations/providers/*.ts src/integrations/apps/*.ts src/integrations/gateway/*.ts src/ecosystem/types.ts src/ecosystem/sharedCache/*.ts src/ecosystem/commons/*.ts src/ecosystem/federation/*.ts src/ecosystem/economy/*.ts src/ecosystem/safety/*.ts src/ecosystem/mockData.ts src/polyphony/*.ts src/worlds/types.ts src/worlds/gateway/*.ts src/worlds/connectors/*.ts src/worlds/experience/*.ts src/worlds/scenes/*.ts src/worlds/rewards/*.ts src/worlds/safety/*.ts src/worlds/mockData.ts src/worlds/index.ts"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}

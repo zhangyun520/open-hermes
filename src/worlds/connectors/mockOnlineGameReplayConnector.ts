@@ -1,0 +1,2 @@
+import { makeMockWorldConnector } from './mockConnectorFactory';
+export const mockOnlineGameReplayConnector = makeMockWorldConnector('world-online-replay', '网游回放连接器', 'online_game_replay', { source: 'replay_file', permissions: ['read_only', 'replay_analysis', 'no_write'], capabilities: { readState: true, importReplay: true, exportScene: false, receiveEvents: false, sendSuggestions: true, sandboxActions: false, multiplayerLiveControl: false } });

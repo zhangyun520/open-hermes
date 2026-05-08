@@ -1,0 +1,16 @@
+export { registerWorldConnector, getWorldConnector, listWorldConnectors, resetWorldConnectors } from './worldConnectorRegistry';
+export { validateWorldConnector, evaluateWorldAction } from './worldSafetyGate';
+export { grantWorldConsent, getWorldConsent, worldConsentAllowsTraining } from './worldConsentManager';
+export { routeWorldFeedback } from './worldFeedbackRouter';
+export { updateWorldModelFromExperience } from './worldModelBridge';
+export { createWorldCapsule, createAnimeWorldCapsule, getWorldCapsule, listWorldCapsules, connectWorldCapsuleToSkill, resetWorldCapsules } from '../scenes/worldCapsule';
+export { importReplayAsExperienceSession, createExperienceSession, recordExperienceEvent, endExperienceSession, getExperienceSession, listExperienceSessions, resetExperienceSessions } from '../experience/experienceSession';
+export { submitExperienceFeedback, getExperienceFeedback, listExperienceFeedback, resetExperienceFeedback } from '../experience/experienceFeedback';
+export { generateProofOfExperience, stableProofHash, listProofsOfExperience, resetProofsOfExperience } from '../experience/proofOfExperience';
+export { calculateExperienceReward } from '../experience/experienceRewardEngine';
+export { scoreFeedbackQuality } from '../rewards/feedbackQualityScoring';
+export { routeFeedbackToResidualCard, mapWorldSceneToResidualCard } from '../scenes/residualSceneMapper';
+export { detectIPRisk } from '../safety/ipLicenseGuard';
+export { detectCheatRisk, requireHumanReviewForWorldAction } from '../safety/antiCheatBoundary';
+export { generateWorldExperienceSummary } from '../experience/experienceSummary';
+export { generateTesterReputationUpdate, defaultTesterReputation } from '../experience/testerReputation';

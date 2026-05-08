@@ -1,0 +1,1 @@
+export { mapWorldSceneToResidualCard } from './residualSceneMapper';

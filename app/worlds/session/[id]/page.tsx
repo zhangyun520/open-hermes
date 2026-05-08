@@ -1,0 +1,6 @@
+import { notFound } from 'next/navigation';
+import { Card, PageTitle } from '@/components/UI';
+import { ExperienceFeedbackCard } from '@/components/worlds/ExperienceFeedbackCard';
+import { generateWorldExperienceSummary, getExperienceFeedback, getExperienceSession, generateProofOfExperience } from '@/src/worlds';
+import '@/src/worlds/mockData';
+export default function WorldSessionPage({ params }: { params: { id: string } }) { const session = getExperienceSession(params.id); if (!session) notFound(); const summary = generateWorldExperienceSummary(session); const proof = generateProofOfExperience(session); return <div><PageTitle eyebrow="Experience Session" title="体验会话详情">体验过程、关键事件、Proof of Experience 与可生成残差卡入口。</PageTitle><section className="grid gap-4 md:grid-cols-2"><Card><h2 className="text-2xl font-semibold">{summary.title}</h2><p className="mt-2 text-white/60">Proof: {proof.proofHash} · {proof.verificationStatus}</p><p className="mt-2 text-tide">隐私：{session.privacyLevel} / {session.dataSensitivity}</p><ul className="mt-4 space-y-2 text-white/65">{session.events.map((event) => <li key={event.id}>• {event.eventType}: {event.summary}</li>)}</ul></Card>{session.feedbackIds.map((id) => { const feedback = getExperienceFeedback(id); return feedback ? <ExperienceFeedbackCard key={id} feedback={feedback} /> : null; })}</section></div>; }
