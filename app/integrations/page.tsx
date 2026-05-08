@@ -1,0 +1,8 @@
+import Link from 'next/link';
+import { Card, Metric, PageTitle } from '@/components/UI';
+import { connectorSummaries, mockUsageRecords, providerSummaries } from '@/src/integrations/gateway/integrationMockData';
+
+export default function IntegrationsPage() {
+  const monthlyCost = mockUsageRecords.reduce((sum, record) => sum + record.estimatedCost, 0).toFixed(4);
+  return <div><PageTitle eyebrow="Integration Gateway" title="模型与 App 连接层">所有第三方连接只走官方 API、OAuth、SDK、Webhook 或用户自带 Key；MVP 全部 mock，不调用付费 API。</PageTitle><section className="grid gap-4 md:grid-cols-4"><Metric label="模型 Provider" value={providerSummaries.length} /><Metric label="App Connector" value={connectorSummaries.length} /><Metric label="最近调用" value={mockUsageRecords.length} /><Metric label="本月成本 mock" value={`$${monthlyCost}`} /></section><section className="mt-6 grid gap-4 md:grid-cols-2"><Link href="/integrations/models"><Card><h2 className="text-2xl font-semibold">模型连接</h2><p className="mt-3 text-white/62">OpenAI、Codex、Claude、DeepSeek、Local/Ollama、OpenAI-compatible。</p></Card></Link><Link href="/integrations/apps"><Card><h2 className="text-2xl font-semibold">App 连接</h2><p className="mt-3 text-white/62">GitHub、Gmail、Calendar、Notion、Slack、Webhook、Custom API。</p></Card></Link><Link href="/integrations/usage"><Card><h2 className="text-2xl font-semibold">使用账本</h2><p className="mt-3 text-white/62">记录 provider、cost、cacheHit、privacy 和 routeReason。</p></Card></Link><Link href="/integrations/approvals"><Card><h2 className="text-2xl font-semibold">审批队列</h2><p className="mt-3 text-white/62">外部写入动作默认进入人工确认队列。</p></Card></Link></section></div>;
+}

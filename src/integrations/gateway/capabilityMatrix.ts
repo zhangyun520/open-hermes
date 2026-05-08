@@ -1,0 +1,1 @@
+export const providerTaskFit: Record<string, string[]> = { openai: ['strong_reasoning', 'review', 'coding', 'vision'], claude: ['writing', 'review', 'strong_reasoning'], deepseek: ['cheap_batch'], local: ['private_local', 'cheap_batch'], codex: ['coding'] };
