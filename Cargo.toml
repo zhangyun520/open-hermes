@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/jelly_core"]
+resolver = "2"

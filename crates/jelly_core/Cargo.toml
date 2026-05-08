@@ -1,0 +1,18 @@
+[package]
+name = "jelly_core"
+version = "0.1.0"
+edition = "2021"
+description = "Stable low-cost pure Rust core for Cognitive Jelly residual routing, safety, privacy, digestion, drift, and lifecycle decisions."
+license = "MIT"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"

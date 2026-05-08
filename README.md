@@ -641,3 +641,7 @@ Proof of Experience 证明某个用户在某个世界胶囊中真实观察、体
 - AI NPC 沙盒。
 - 世界模型不确定性账本。
 - 体验者公会。
+
+## Rust Jelly Core
+
+The repository now includes a pure Rust `jelly_core` crate under `crates/jelly_core`. It captures the stable / low_cost decision core for the residual formula (`C + D = 1`), CnidocyteSafetyGate, NerveNetRouter, ResidualDigestor, OsmoticPrivacyMembrane, DriftOptimizer, and PolypMedusaLifecycle without changing the TypeScript web layer. The crate has no external dependencies and does not store secrets, write public cache, call models, or automate external actions. See [docs/architecture/RUST_JELLY_CORE.md](docs/architecture/RUST_JELLY_CORE.md).
