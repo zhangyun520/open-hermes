@@ -1,0 +1,3 @@
+import type { JellyGlowEvent } from '@/src/jelly';
+const colorClass: Record<JellyGlowEvent['colorHint'], string> = { cyan: 'bg-cyan-300 shadow-cyan-300/60', violet: 'bg-violet-300 shadow-violet-300/60', green: 'bg-emerald-300 shadow-emerald-300/60', amber: 'bg-amber-300 shadow-amber-300/60', red: 'bg-rose-400 shadow-rose-400/60' };
+export function JellyPulseIndicator({ event }: { event: JellyGlowEvent }) { return <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4"><span className={`h-4 w-4 rounded-full shadow-[0_0_24px] ${colorClass[event.colorHint]}`} /><div><p className="font-semibold">{event.glowType}</p><p className="text-sm text-white/60">{event.message} · intensity {event.intensity}</p></div></div>; }

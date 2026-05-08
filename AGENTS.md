@@ -80,3 +80,30 @@ When completing work, summarize:
 - Whether human review is needed.
 - Whether the work can become a VersionNode.
 - Tests or checks run.
+
+## Jellyfish Architecture Principles
+
+Cognitive Jelly treats jellyfish as architecture, not mascot.
+
+When implementing features, map them to jellyfish-inspired organs when appropriate:
+
+- NerveNetRouter: distributed routing, not one central brain
+- TentacleConnector: external integrations with consent
+- CnidocyteSafetyGate: immediate defense against privacy, abuse, cheating, unauthorized IP, and high-risk automation
+- ResidualDigestor: failures must be digested into residual cards before sharing
+- BioluminescentFeedback: valuable events should be visible as glow signals
+- OsmoticPrivacyMembrane: raw data stays private; only redacted structures may cross layers
+- PolypMedusaLifecycle: ideas and skills mature through stages, not only linear versions
+- SwarmCommons: shared skills must be verified, attributed, and safe
+- RegenerativeRecovery: failures should produce recovery plans
+
+Forbidden:
+
+- Do not treat jellyfish only as UI decoration.
+- Do not bypass CnidocyteSafetyGate for convenience.
+- Do not send private residuals to public cache.
+- Do not connect tentacles to external systems without consent and safety checks.
+- Do not make high-risk external actions automatic.
+- Do not implement cheating, botting, boosting, or anti-cheat bypass.
+- Do not implement unauthorized IP/persona replication.
+- Do not let AI-generated modules become canonical without review.

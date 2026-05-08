@@ -57,6 +57,14 @@ export const featureModules: FeatureModule[] = [
     signal: '生命体征'
   },
   {
+    title: '水母智能体架构',
+    englishTitle: 'Jelly Agent Architecture',
+    href: '/jelly',
+    description: '把水母的神经网、触手、刺胞、透明身体、微光、消化和生命周期工程化为智能体器官。',
+    status: 'mock-report',
+    signal: '架构微光'
+  },
+  {
     title: '技能池',
     englishTitle: 'Skill Memory Pool',
     href: '/skill-memory-pool',

@@ -107,6 +107,23 @@ This repository is currently a prototype. If you redistribute, deploy, or build 
 
 Raw data stays private. Shared intelligence must be anonymized, authorized, structured, verified, and accountable. High-risk external actions require human approval; game/world connectors must not bypass anti-cheat; persona/IP connectors require authorization; AI-generated versions cannot become canonical without human review. See [SECURITY.md](SECURITY.md) and [docs/values/ANTI_ABUSE_BOUNDARIES.md](docs/values/ANTI_ABUSE_BOUNDARIES.md).
 
+## Jellyfish Agent Architecture
+
+Jellyfish is not our mascot. Jellyfish is our agent architecture.
+
+认知水母不是一个中心化聊天机器人，而是一张分布式、透明、可发光、可防御、可消化残差、可群体演化的智能体网络。
+
+- 分布式神经网对应系统路由：`NerveNetRouter` routes signals without assuming one central brain.
+- 触手对应生态连接层：`TentacleConnector` links models, tools, apps, games, communities, and commons with consent.
+- 刺细胞对应安全门：`CnidocyteSafetyGate` blocks privacy, abuse, cheating, unauthorized IP, and high-risk automation.
+- 透明身体对应审计与来源追踪：`TransparentAuditLayer` records route and safety explanations.
+- 发光对应价值反馈：`BioluminescentFeedback` turns residual discovery, skill hits, cache hits, and safety blocks into glow events.
+- 胃腔对应残差消化：`ResidualDigestor` converts failures and world-experience signals into residual card candidates.
+- 生命周期对应复调版本和技能成熟：`PolypMedusaLifecycle` maps ideas, skills, residuals, versions, and cache objects through maturity stages.
+- 水母群对应共享技能公地：`SwarmCommons` represents verified, attributed, safe shared skills.
+
+See [docs/architecture/JELLYFISH_AGENT_ARCHITECTURE.md](docs/architecture/JELLYFISH_AGENT_ARCHITECTURE.md) and the `/jelly` page for the current MVP architecture map.
+
 ---
 
 Cognitive Jelly 是从 “Residual Stable / 残差马厩” MVP 概念重构而来的 Web App 原型：一个把愿望、失败、灵感、经验、审核和缓存，持续转化为可复用智能能力的认知操作系统。

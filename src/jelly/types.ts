@@ -1,0 +1,13 @@
+export type JellyOrganType = 'nerve_net' | 'tentacle' | 'cnidocyte' | 'transparent_audit' | 'bioluminescence' | 'digestor' | 'drift_optimizer' | 'lifecycle' | 'swarm_commons' | 'privacy_membrane' | 'pulse_scheduler' | 'regenerative_recovery';
+export type JellySignalType = 'wish' | 'reverse_wish' | 'garbage' | 'residual_card' | 'skill_hit' | 'cache_hit' | 'review' | 'safety_risk' | 'bias_alert' | 'human_transition' | 'world_experience' | 'external_connector' | 'version_event';
+export type JellyRiskLevel = 'low' | 'medium' | 'high' | 'critical';
+export type JellyPrivacyLevel = 'public' | 'community' | 'team' | 'private';
+export type JellySignalStatus = 'received' | 'digesting' | 'routed' | 'blocked' | 'needs_review' | 'cached' | 'glowing' | 'quarantined' | 'regenerating' | 'completed';
+
+export interface JellySignal { id: string; type: JellySignalType; sourceModule: string; targetModule?: string; summary: string; payloadRef?: string; privacyLevel: JellyPrivacyLevel; riskLevel: JellyRiskLevel; status: JellySignalStatus; createdAt: string; metadata: Record<string, unknown>; }
+export interface JellyOrgan { id: string; name: string; type: JellyOrganType; biologicalInspiration: string; agentFunction: string; connectedModules: string[]; status: 'active' | 'paused' | 'warning' | 'quarantined'; riskLevel: JellyRiskLevel; signalsProcessed: number; lastPulseAt?: string; }
+export interface JellyRouteDecision { signalId: string; routeTo: string[]; blockedBy?: string[]; requiresHumanReview: boolean; useCacheFirst: boolean; useLocalOnly: boolean; reason: string; }
+export interface JellySafetyDecision { signalId: string; allowed: boolean; riskLevel: JellyRiskLevel; reasons: string[]; requiredActions: Array<'redact' | 'human_review' | 'quarantine' | 'consent_required' | 'license_check' | 'human_transition_review'>; }
+export interface JellyDigestResult { signalId: string; residualCardCandidate?: { title: string; domain: string; currentD: number; targetD: number; verificationMetric: string; reusable: boolean; }; wasteClass: 'recyclable' | 'harmful' | 'compostable' | 'slag' | 'review_required'; notes: string[]; }
+export interface JellyGlowEvent { id: string; signalId: string; glowType: 'residual_detected' | 'skill_hit' | 'cache_hit' | 'contribution_recorded' | 'bias_warning' | 'safety_block' | 'human_transition_needed' | 'version_matured'; intensity: number; colorHint: 'cyan' | 'violet' | 'green' | 'amber' | 'red'; message: string; createdAt: string; }
+export interface JellyLifecycleState { objectId: string; objectType: 'idea' | 'skill' | 'residual' | 'version' | 'cache_object'; stage: 'polyp' | 'ephyra' | 'medusa' | 'bloom' | 'dormant' | 'frozen'; maturityScore: number; nextPossibleStages: string[]; }

@@ -1,0 +1,2 @@
+import type { JellyRiskLevel, JellySafetyDecision } from '@/src/jelly';
+export function JellySafetyBadge({ riskLevel, decision }: { riskLevel: JellyRiskLevel; decision?: JellySafetyDecision }) { const tone = riskLevel === 'low' ? 'border-plankton/40 bg-plankton/10 text-plankton' : riskLevel === 'medium' ? 'border-tide/40 bg-tide/10 text-tide' : 'border-coral/40 bg-coral/10 text-coral'; return <span className={`rounded-full border px-3 py-1 text-xs ${tone}`}>{decision && !decision.allowed ? 'blocked · ' : ''}{riskLevel}</span>; }

@@ -1,0 +1,2 @@
+const steps = ['失败 / 垃圾 / 体验反馈', 'OsmoticPrivacyMembrane', 'ResidualDigestor', 'Residual Card', 'Review Pool', 'Skill Capsule', 'Shared Cache'];
+export function JellyDigestFlow() { return <div className="grid gap-3 md:grid-cols-7">{steps.map((step, index) => <div key={step} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center"><p className="text-xs text-tide">{index + 1}</p><p className="mt-2 text-sm font-semibold">{step}</p>{index < steps.length - 1 ? <p className="mt-2 text-plankton">→</p> : null}</div>)}</div>; }

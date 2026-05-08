@@ -15,6 +15,7 @@
     "src/integrations/**/*.ts",
     "src/ecosystem/**/*.ts",
     "src/polyphony/**/*.ts",
-    "src/worlds/**/*.ts"
+    "src/worlds/**/*.ts",
+    "src/jelly/**/*.ts"
   ]
 }

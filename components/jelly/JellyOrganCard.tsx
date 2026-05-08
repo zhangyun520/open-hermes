@@ -1,0 +1,4 @@
+import type { JellyOrgan } from '@/src/jelly';
+import { Card } from '@/components/UI';
+import { JellySafetyBadge } from './JellySafetyBadge';
+export function JellyOrganCard({ organ }: { organ: JellyOrgan }) { return <Card><div className="flex flex-wrap items-center gap-2"><JellySafetyBadge riskLevel={organ.riskLevel} /><span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">{organ.status}</span></div><h3 className="mt-3 text-xl font-semibold">{organ.name}</h3><p className="mt-2 text-sm text-tide">{organ.type}</p><p className="mt-3 text-sm leading-6 text-white/60">生物启发：{organ.biologicalInspiration}</p><p className="mt-2 text-sm leading-6 text-white/70">智能体功能：{organ.agentFunction}</p><p className="mt-3 text-xs text-white/50">连接：{organ.connectedModules.join(' / ')}</p><p className="mt-2 text-xs text-plankton">signals processed: {organ.signalsProcessed}</p></Card>; }
