@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "vitest run",
     "lint": "next lint",
-    "typecheck:core": "tsc -p tsconfig.core.json --pretty false --noEmit"
+    "typecheck:core": "tsc --noEmit -p tsconfig.core.json --pretty false"
   },
   "dependencies": {
     "next": "^15.3.2",

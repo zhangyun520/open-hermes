@@ -66,6 +66,32 @@ Core slogans:
 
 MVP 不调用付费模型、不写外部 App、不接真实支付，只提供本地确定性结晶路由、价值估算、晋升门槛和训练导出包。
 
+
+## 双工编程器官 / Dual Coding Organ
+
+`/dual-coding-organ` 展示水母的软件工程闭环：Codex 施工、Claude Code 审稿、CI 验证、补丁裁判和代码结晶写入。
+
+核心函数位于 `lib/dualCodingOrgan.ts`：
+
+- `createCodingTaskSpec(input)`
+- `planDualCodingRun(spec)`
+- `simulateCodexPatch(spec, plan)`
+- `simulateClaudeCodeReview(spec, patch)`
+- `simulateTestRun(spec, patch, review)`
+- `arbitratePatch(spec, review, tests)`
+- `writeCodingCrystal(...)`
+- `runDualCodingOrganPreview(input)`
+
+MVP 不调用真实 Codex/Claude Code，不写仓库，不运行 shell，只提供确定性的工程闭环模拟、风险闸门和代码结晶生成逻辑。
+
+工程原则：
+
+- Codex 施工。
+- Claude Code 审稿。
+- CI 验证。
+- 水母写晶。
+- 凡码必测，凡改必审，凡错必记。
+
 ## Values
 
 The short version:

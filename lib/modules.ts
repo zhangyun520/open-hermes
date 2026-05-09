@@ -81,6 +81,14 @@ export const featureModules: FeatureModule[] = [
     signal: '数据结晶'
   },
   {
+    title: '双工编程器官',
+    englishTitle: 'Dual Coding Organ',
+    href: '/dual-coding-organ',
+    description: '把 Codex 施工、Claude Code 审稿、CI 验证、补丁裁判和代码结晶写入串成水母的软件工程闭环。',
+    status: 'mock-report',
+    signal: '代码闭合'
+  },
+  {
     title: '复调版本',
     englishTitle: 'Polyphonic Versioning',
     href: '/polyphony',
