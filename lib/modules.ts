@@ -73,6 +73,14 @@ export const featureModules: FeatureModule[] = [
     signal: '缓存命中'
   },
   {
+    title: '结晶商店',
+    englishTitle: 'Jelly Crystal Store',
+    href: '/crystal-store',
+    description: '把高频残差、答案程序、验证器和失败边界沉淀为可调用、可分叉、可反哺模型的数据结晶。',
+    status: 'mock-report',
+    signal: '数据结晶'
+  },
+  {
     title: '复调版本',
     englishTitle: 'Polyphonic Versioning',
     href: '/polyphony',

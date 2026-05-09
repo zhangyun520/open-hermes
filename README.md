@@ -51,6 +51,21 @@ Core slogans:
 - Avatar Morphing / 幻化工坊
 - Cognitive Prosthesis / 认知义体
 
+
+## 水母结晶公地 / Jelly Crystal Commons
+
+`/crystal-store` 展示可复用数据结晶：不是缓存答案，而是缓存带闭合证明、答案程序、验证器、失败边界和贡献链的闭合路径。
+
+核心函数位于 `lib/crystals.ts`：
+
+- `selectCrystalRoute(input)`
+- `invokeCrystalPreview(input)`
+- `calculateCrystalValue(crystal)`
+- `canPromoteCrystal(crystal, targetLayer)`
+- `exportCrystalTrainingPack(crystal)`
+
+MVP 不调用付费模型、不写外部 App、不接真实支付，只提供本地确定性结晶路由、价值估算、晋升门槛和训练导出包。
+
 ## Values
 
 The short version:
