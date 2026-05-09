@@ -140,3 +140,21 @@ Forbidden:
 
 Core sentence:
 Only the best humus may grow into new synapses.
+## Personal Agent and Tentacle Rules
+
+Personal agents may propose tentacles, but they must not directly execute real network, file-write, external-app, or sandbox actions without protocol gates.
+
+Rules:
+1. Every tentacle must have a manifest.
+2. Network access defaults to none or allowlist.
+3. External writes require consent and human review.
+4. Secrets are unavailable by default.
+5. Executable tentacles require sandbox policy review.
+6. Failures must be digested into residual structures without raw log leakage.
+7. Imported external skills stay quarantined until reviewed.
+
+Forbidden:
+- Do not let personal agents bypass CnidocyteSafetyGate or TentacleAdmissionGate.
+- Do not grant open network access without human review.
+- Do not execute destructive commands.
+- Do not upload private data from local sandboxes.

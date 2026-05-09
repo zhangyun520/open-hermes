@@ -147,3 +147,7 @@ The jellyfish architecture now includes a protocol bridge from residual digestio
 
 Raw private residuals remain behind the OsmoticPrivacyMembrane and must not be fed into training.
 - `Residual Synaptic Pruning`: keeps the synapse network from becoming a garbage mountain by keeping, merging, downgrading, dormancy-routing, composting, quarantining, or forgetting candidates based on usage, verification, risk, duplication, age, historical value, and consent withdrawal.
+
+## Personal Agent Tentacle Extension
+
+The Personal Agent layer treats every networked or executable capability as a declared tentacle. TentacleAdmissionGate, sandbox policy, skill import quarantine, transparent audit, and residual digestion must run before any future real action. The current repository keeps these flows mock-only so the architecture can be tested without external side effects.

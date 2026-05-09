@@ -18,6 +18,8 @@
     "src/worlds/**/*.ts",
     "src/jelly/**/*.ts",
     "src/synapse/**/*.ts",
-    "synapse.ts"
+    "src/agents/**/*.ts",
+    "synapse.ts",
+    "agents.ts"
   ]
 }

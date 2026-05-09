@@ -695,3 +695,17 @@ We transform verified residual structures into accountable synapses.
 我们是把被验证的残差结构，转化为可追溯的突触。
 
 See [Cognitive Jelly v0.4 Star-Synapse Plan](docs/whitepapers/COGNITIVE_JELLY_V0_4_STAR_SYNAPSE_PLAN.md), [Neural Fertilizer Admission Protocol](docs/architecture/NEURAL_FERTILIZER_ADMISSION_PROTOCOL.md), [Nebula Synapse Network](docs/architecture/NEBULA_SYNAPSE_NETWORK.md), [Modular Model Mesh](docs/architecture/MODULAR_MODEL_MESH.md), [Star-Synapse Plan](docs/architecture/STAR_SYNAPSE_PLAN.md), [Residual Synaptic Pruning](docs/architecture/RESIDUAL_SYNAPTIC_PRUNING.md), and [Neural Fertilizer Ethics](docs/values/NEURAL_FERTILIZER_ETHICS.md).
+
+## Personal Agents and Networked Tentacles
+
+Cognitive Jelly now reserves a mock-first Personal Agent layer. A personal agent can propose tentacles, but each tentacle must declare its permissions, network access, privacy boundary, approval requirement, audit requirement, and residual-digest behavior.
+
+The current implementation is protocol scaffolding only:
+
+- no real network execution;
+- no real external API calls;
+- no real file writes from agent tasks;
+- no secrets access;
+- no raw logs sent to NFAP or public cache.
+
+The agent loop is plan-first: observe → plan → safety/privacy check → dry-run → optional human approval → mock execution → verification → residual digest → audit. External skills enter quarantine before they can become mock skills, and future executable work must pass sandbox policy first.
