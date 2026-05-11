@@ -23,14 +23,16 @@
 
 ## Roles
 
-- Maintainer
-- Contributor
-- Reviewer
-- Safety reviewer
-- Bias shelter reviewer
-- Human transition reviewer
-- Protocol steward
-- Community moderator
+Jellyfish governance follows **wide entrance, narrow trunk**: many people can propose and test ideas, but the reviewed project trunk stays small, accountable, and privacy-preserving.
+
+- **Visitor** — reads, tries demos, opens questions, and reports confusing areas.
+- **Contributor** — submits ideas, failure cases, benchmark scenarios, code, documentation, research notes, or product design.
+- **Triager** — labels issues, checks templates, requests redaction, routes high-risk items to human review, and links duplicates.
+- **Maintainer** — reviews PRs, merges low-risk changes, keeps tests passing, and updates contribution records.
+- **Core Maintainer** — owns release readiness, protocol compatibility, security-sensitive decisions, and canonical branch protection.
+- **Steward Council** — handles governance disputes, public commons promotion, safety escalations, and long-term project direction.
+
+Role changes should be based on sustained contribution, safety judgment, and public accountability rather than status, payment, or follower count.
 
 ## Decision Principles
 

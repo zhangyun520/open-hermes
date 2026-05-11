@@ -1,0 +1,30 @@
+name: Idea
+about: Propose a new Jellyfish idea, metaphor, workflow, or RFC seed.
+title: "[Idea]: "
+labels: [idea, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing an idea. Jellyfish uses a wide entrance, narrow trunk: many ideas are welcome, reviewed ideas may become RFCs or roadmap items.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What are you proposing?
+    validations:
+      required: true
+  - type: textarea
+    id: residual
+    attributes:
+      label: Residual addressed
+      description: Which D / unresolved gap does this reduce?
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and privacy notes
+      description: Does this involve private data, public cache, external integrations, or human review?
+    validations:
+      required: true

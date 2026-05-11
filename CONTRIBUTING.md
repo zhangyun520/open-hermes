@@ -4,16 +4,21 @@ Thank you for contributing to Cognitive Jelly / 认知水母.
 
 ## Contribution Types
 
-1. Code contribution
-2. Protocol contribution
-3. Documentation contribution
-4. Residual taxonomy contribution
-5. Skill capsule contribution
-6. Safety review
-7. Bias report
-8. Human transition proposal
-9. UI / aesthetic contribution
-10. World experience connector contribution
+Jellyfish uses a **wide entrance, narrow trunk** model: many contribution forms are welcome, while important changes move through review, attribution, and governance before becoming canonical.
+
+You can contribute:
+
+- `idea` — new concepts, sketches, metaphors, workflows, or RFC seeds.
+- `failure case` — mistakes, bad outputs, broken workflows, safety misses, or residuals that should be digested instead of hidden.
+- `benchmark scenario` — reproducible tasks, eval prompts, expected behaviors, counterexamples, and regression cases.
+- `code` — implementation, tests, refactors, mocks, safety gates, UI, or tooling.
+- `documentation` — guides, diagrams, glossary entries, protocol notes, examples, and translations.
+- `research note` — literature notes, hypotheses, measurement plans, or open questions.
+- `product design` — flows, wireframes, interaction patterns, onboarding, and user research summaries.
+
+Failure cases and benchmark scenarios are first-class contributions. Do not include private raw data, secrets, or sensitive user material; redact before sharing.
+
+All important accepted contributions should be added to `CONTRIBUTORS.md` under the relevant type.
 
 ## Required Contribution Questions
 

@@ -1,0 +1,33 @@
+name: Feature request
+about: Request a product, protocol, code, or documentation feature.
+title: "[Feature]: "
+labels: [feature, needs-triage]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature
+      description: What should be added or changed?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Which residual does this reduce?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Suggested scope
+      description: What is the smallest safe version?
+    validations:
+      required: false
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk / privacy concerns
+      description: Does it affect privacy, public cache, human transition, or external integrations?
+    validations:
+      required: true

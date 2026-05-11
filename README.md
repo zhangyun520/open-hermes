@@ -2,6 +2,8 @@
 
 **An open-source residual operating system for human-AI cognitive commons.**
 
+**Jellyfish is an open co-creation system for human-AI symbiosis.**
+
 认知水母不是一个新的聊天机器人，也不是套壳大模型应用。
 它是一个开源的残差操作系统原型，试图把人类的愿望、失败、灵感、经验、审核、缓存和贡献，沉淀成可复用、可验证、可分配的智能能力。
 

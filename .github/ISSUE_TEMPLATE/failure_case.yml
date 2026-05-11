@@ -1,0 +1,40 @@
+name: Failure case
+about: Share a redacted failure case or unsafe/broken workflow.
+title: "[Failure]: "
+labels: [failure-case, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Failure cases are first-class contributions. Please redact private data, secrets, customer details, and raw logs before submitting.
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure case
+      description: What failed? What was expected instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or context
+      description: Provide a minimal, redacted reproduction if possible.
+    validations:
+      required: false
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk level
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: Lesson / residual
+      description: What should Jellyfish learn or guard against?
+    validations:
+      required: true

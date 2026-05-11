@@ -1,0 +1,37 @@
+name: Benchmark scenario
+about: Submit a reproducible benchmark or evaluation scenario.
+title: "[Benchmark]: "
+labels: [benchmark, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Benchmark samples are contributions. Use synthetic or redacted data only.
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: What task or behavior should be measured?
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input sample
+      description: Provide a minimal synthetic or redacted input.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should pass, fail, or be routed to review?
+    validations:
+      required: true
+  - type: textarea
+    id: metric
+    attributes:
+      label: Metric
+      description: How should success be measured?
+    validations:
+      required: true
